@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Data Calon</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="index.html">
+                            <img src="images/icon/logo.png" alt="CoolAdmin" />
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li>
+                            <a href="index.html">
+                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="table.html">
+                                <i class="fas fa-table"></i>Data</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/icon/logo.png" alt="Cool Admin" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="">
+                            <a href="index.html">
+                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        </li>
+                        <li class="active">
+                            <a href="table.html">
+                                <i class="fas fa-table"></i>Tables</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <form class="form-header" action="" method="POST">
+                            </form>
+                            <div class="header-button">
+                                <div class="noti-wrap">
+                                </div>
+                                <div class="account-wrap">
+                                    <div class="account-item clearfix js-item-menu">
+                                        <div class="image">
+                                            <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                        </div>
+                                        <div class="content">
+                                            <a class="js-acc-btn" href="#">john doe</a>
+                                        </div>
+                                        <div class="account-dropdown js-dropdown">
+                                            <div class="info clearfix">
+                                                <div class="image">
+                                                    <a href="#">
+                                                        <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="name">
+                                                        <a href="#">john doe</a>
+                                                    </h5>
+                                                    <span class="email">johndoe@example.com</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- END HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- DATA TABLE -->
+                                <h3 class="title-5 m-b-35">Data Calon</h3>
+                                <div class="table-data__tool" id="button_add">
+                                    <div class="table-data__tool-right">
+                                        <button class="au-btn au-btn-icon au-btn--green au-btn--small" onclick="addButton()">
+                                            <i class="zmdi zmdi-plus"></i>Add Calon
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row" id="div_form">
+                                    <div class="col-lg-12">
+                                        <div class="card">
+                                            <div class="card-header">Form Calon Ketua</div>
+                                            <div class="card-body">
+                                                <form id="form_input" enctype="multipart/form-data" method="post">
+                                                    <div class="form-group">
+                                                        <label for="name" class="control-label mb-1">Nama Calon BEM</label>
+                                                        <input id="name_input" name="name" type="text" class="form-control">
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <input type="hidden" id="act_input">
+                                                        <input type="hidden" name="" id="id_input">
+                                                        <button type="button" class="btn btn-primary btn-sm" onclick="saveData()">
+                                                            <i class="fa fa-dot-circle-o"></i> Simpan
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger btn-sm" onclick="cancelButton()">
+                                                            <i class="fa fa-ban"></i> Batal
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive table-responsive-data2">
+                                    <table class="table table-data2">
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>Nama Calon</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="list_table">
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- END DATA TABLE -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+    <script>
+        loadContent();
+        $("#div_form").hide();
+
+        function addButton() {
+            $("#button_add").hide();
+            $("#div_form").show();
+            document.getElementById("name_input").value = '';
+            document.getElementById("id_input").value = '';
+        }
+
+        function cancelButton() {
+            $("#div_form").hide();
+            $("#button_add").show();
+            document.getElementById("name_input").value = '';
+        }
+
+        function loadContent(){
+            var html = '';
+            var xhr = new XMLHttpRequest();
+            var url = "http://localhost:8000/list";
+            xhr.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                var data = JSON.parse(this.responseText);
+                
+                data.forEach(function (element) { 
+                    html += '<tr class="tr-shadow">';
+                    html += '<td>'+element['Id']+'</td>';
+                    html += '<td>'+element['Name']+'</td>';
+                    html += '<td>';
+                    html += '<div class="table-data-feature">';
+                    html += '<button class="item" data-toggle="tooltip" data-placement="top" title="Edit" onclick="editData('+element['Id']+')"><i class="zmdi zmdi-edit"></i></button>';
+                    html += '<button class="item" data-toggle="tooltip" data-placement="top" title="Delete" onclick="deleteData('+element['Id']+')"><i class="zmdi zmdi-delete"></i></button>';
+                    html += '</div>';
+                    html += '</td>';
+                    html += '</tr>';
+                    html += '<tr class="spacer"></tr>';
+                });
+                document.getElementById('list_table').innerHTML = html;
+                }
+            };
+            xhr.open("GET", url);
+            xhr.send();
+        }
+
+        function saveData(){
+            act = document.getElementById("act_input").value;
+
+            const params = {
+                name: document.getElementById("name_input").value,
+                id: document.getElementById("id_input").value
+            }
+
+            var xhr = new XMLHttpRequest();
+
+            if(act == '' || act == null){
+                var url = "http://localhost:8000/add";
+            }else if(act == 'edit'){
+                var url = "http://localhost:8000/update";
+            }
+            
+            
+            xhr.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                const result = JSON.parse(this.responseText);
+                
+                if(result.message == 'Success'){
+                    cancelButton();
+                    loadContent();
+                    document.getElementById("act_input").value = '';
+                    document.getElementById("id_input").value = '';
+                }
+                
+                }
+            };
+            xhr.open("POST", url, true);
+            xhr.send(JSON.stringify(params));
+        }
+
+        function editData(id){
+            document.getElementById("act_input").value = 'edit';
+
+            const params = {
+                id: id,
+            }
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://localhost:8000/edit";
+            addButton();
+
+            xhr.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                const result = JSON.parse(this.responseText);
+                
+                document.getElementById("id_input").value = result.Id;
+                document.getElementById("name_input").value = result.Name;
+                
+                }
+            };
+            xhr.open("POST", url, true);
+            xhr.send(JSON.stringify(params));
+        }
+
+        function deleteData(id){
+            const params = {
+                id: id,
+            }
+
+            var xhr = new XMLHttpRequest();
+            var url = "http://localhost:8000/delete";
+
+            let confirmation = "Apakah anda yakin untuk menghapus data ini ?";
+            if (confirm(confirmation) == true) {
+            
+            xhr.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    const result = JSON.parse(this.responseText);
+                    
+                    if(result.message == 'Success'){
+                    loadContent();
+                    }
+                    
+                }
+            };
+            xhr.open("POST", url, true);
+            xhr.send(JSON.stringify(params));
+
+            }
+            
+            
+        }
+    </script>
+</body>
+
+</html>
+<!-- end document-->
